@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(130, 190, 241);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    color:black;
+}
+
+th{
+    background-color: rgb(205, 195, 247);
+}
+table{
+    margin-left: 300px;
+}
+img{
+    margin: 9px 9px 9px 9px;
+}
+.title1{       
+    font-family: 'Nona Manis Shadow', sans-serif;
+    font-family: 'Nona Manis', sans-serif;
+    font-family: 'Nona Manis Outline', sans-serif;
+     font-size: 100px;  
+     color:cornflowerblue;    
+     text-align: center;                                    
+}

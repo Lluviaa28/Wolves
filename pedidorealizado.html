@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.cdnfonts.com/css/nona-manis-shadow" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    <title>Pagina 1</title>
+</head>
+<body>
+   <div style="margin: 24px;">
+       <nav class="navbar navbar-inverse navbar-stick-static-top">
+           <div class="container">
+             <a class="navbar-brand" href="index.html">Inicio</a>
+             <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li class="active">
+                    <a href="pedido.html">Pedido</a>
+                </li>
+                <li class="active">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+             </ul>
+           </div>
+       </nav>
+   </div>
+   <h1>PEDIDO REALIZADO CON EXITO</h1>
+   <ul>
+     <li><strong> Nombre: </strong> <span id="nombre"></span></li>
+     <li><strong> Apellido: </strong> <span id="apellido"></span></li>
+     <li><strong> Telefono: </strong> <span id="telefono"></span></li>
+     <li><strong> Direccion: </strong> <span id="direccion"></span></li>
+     <li><strong> Colonia: </strong> <span id="colonia"></span></li>
+     <li><strong> Tomate: </strong> <span id="tomate"></span></li>
+     <li><strong> Lechuga: </strong> <span id="lechuga"></span></li>
+     <li><strong> Aguacate: </strong> <span id="aguacate"></span></li>
+     <li><strong> Cebolla: </strong> <span id="cebolla"></span></li>
+     <li><strong> Cilantro: </strong> <span id="cilantro"></span></li>
+     <li><strong> Zanahoria: </strong> <span id="zanahoria"></span></li>
+     <li><strong> Apio: </strong> <span id="apio"></span></li>
+     <li><strong> Champinones: </strong> <span id="champinones"></span></li>
+     <li><strong> Queso Amarillo: </strong> <span id="quesoamarillo"></span></li>
+     <li><strong> Pico de gallo: </strong> <span id="picodegallo"></span></li>
+     <li><strong> Cebolla Asada: </strong> <span id="cebollaasada"></span></li>
+     <li><strong> Salsa: </strong> <span id="salsa"></span></li>
+     <li><strong> Crema: </strong> <span id="crema"></span></li>
+     <li><strong>Guacamole: </strong> <span id="guacamole"></span></li>
+     <li><strong> Tocino: </strong> <span id="tocino"></span></li>
+     <li><strong> Ketchup: </strong> <span id="ketchup"></span></li>
+     <li><strong> Aderezo Ranch: </strong> <span id="aderezoranch"></span></li>
+     <li><strong> Aderezo Tartara: </strong> <span id="aderezotartara"></span></li>
+     <li><strong> Aderezo Belga: </strong> <span id="aderezobelga"></span></li>
+     <li><strong>Queso Parmesano: </strong> <span id="quesoparmesano"></span></li>
+     <li><strong>Queso Mozarella: </strong> <span id="quesomozarella"></span></li>
+    </ul>
+   <script>
+    const orden=JSON.parse(localStorage.getItem("orden"));
+    document.getElementById("nombre").textContent=orden.nombre;
+    document.getElementById("apellido").textContent=orden.apellido;
+    document.getElementById("telefono").textContent=orden.telefono;
+    document.getElementById("direccion").textContent=orden.direccion;
+    document.getElementById("colonia").textContent=orden.colonia;
+    document.getElementById("tomate").textContent=orden.tomate;
+    document.getElementById("lechuga").textContent=orden.lechuga;
+    document.getElementById("aguacate").textContent=orden.aguacate;
+    document.getElementById("cebolla").textContent=orden.cebolla;
+    document.getElementById("cilantro").textContent=orden.cilantro;
+    document.getElementById("zanahoria").textContent=orden.zanahoria;
+    document.getElementById("apio").textContent=orden.apio;
+    document.getElementById("champinones").textContent=orden.champinones;
+    document.getElementById("quesoamarillo").textContent=orden.quesoamarillo;
+    document.getElementById("picodegallo").textContent=orden.picodegallo;
+    document.getElementById("cebollaasada").textContent=orden.cebollaasada;
+    document.getElementById("salsa").textContent=orden.salsa;
+    document.getElementById("crema").textContent=orden.crema;
+    document.getElementById("guacamole").textContent=orden.guacamole;
+    document.getElementById("tocino").textContent=orden.tocino;
+    document.getElementById("ketchup").textContent=orden.ketchup;
+    document.getElementById("aderezoranch").textContent=orden.aderezoranch;
+    document.getElementById("aderezotartara").textContent=orden.aderezotartara;
+    document.getElementById("aderezobelga").textContent=orden.aderezobelga;
+    document.getElementById("quesoparmesano").textContent=orden.quesoparmesano;
+    document.getElementById("quesomozarella").textContent=orden.quesomozarella;
+
+   </script>
+</body>
+</html>

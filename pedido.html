@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.cdnfonts.com/css/nona-manis-shadow" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Pagina 1</title>
+</head>
+<body>
+   <div style="margin: 24px;">
+       <nav class="navbar navbar-inverse navbar-stick-static-top">
+           <div class="container">
+             <a class="navbar-brand" href="index.html">Inicio</a>
+             <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li class="active">
+                    <a href="pedido.html">Pedido</a>
+                </li>
+                <li class="active">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+             </ul>
+           </div>
+       </nav>
+   </div>
+   <h1 class="titulo1">Pedido</h1>
+   <h1>Formulario</h1>
+
+   <form id="pedido">
+   <p>Nombre: <input type="text" id="nombre" name="nombre" size="30"></p>
+   <p>Apellido: <input type="text" id="apellido" name="apellido" size="30"></p>
+   <p>Telefono: <input type="text" id="telefono" name="telefono" size="20"></p>
+   <p>Direccion: <input type="text" id="direccion" name="direccion" size="30"></p>
+   <p>Colonia: <input type="text" id="colonia" name="colonia" size="30"></p>
+   <hr>
+
+   <select name="menu" id="menu">
+    <optgroup label="Hamburguesas">
+        <option value="doble carne">Hamburguesa Doble Carne</option>
+        <option value="pollo">Hamburguesa de Pollo</option>
+        <option value="de queso">Hamburguesa con Queso</option>
+        <option value="bacon">Hamburguesa con Bacon</option>
+    </optgroup>
+    <optgroup label="Tacos Piratas">
+        <option value="tacos trompo">Tacos de Trompo</option>
+            <option value="tacosbisteck">Tacos de Bisteck</option>
+            <option value="tacostripa">Tacos de Tripa</option>
+            <option value="tacosbarbacoa">Tacos de Barbacoa</option>
+    </optgroup>
+    <optgroup label="Pizzas Mini">
+        <option value="pizzapeperoni">Pizza Peperoni</option>
+        <option value="pizzaqueso">Pizza Queso</option>
+        <option value="pizzahawaiana">Pizza Hawaiana</option>
+        <option value="pizzacarnesfrias">Pizza Carnes Frias</option>
+        <option value="pizzamexicana">Pizza Mexicana</option>
+    </optgroup>
+    <optgroup label="Burritos">
+        <option value="burritopizza">Burri Pizza</option>
+        <option value="burritocarnemolida">Biurrito Carne Molida</option>
+        <option value="burritopollo">Burrito Pollo</option>
+        <option value="burritohawaiano">Burrito Hawaiano</option>
+        <option value="burritofrijolesconchorizo">Burrito Frijoles con Chorizo</option>
+        <option value="burritoqueso">Burrito Queso</option>
+    </optgroup>
+    <optgroup label="Papas">
+        <option value="papasalafrancesa">Papas a la Francesa</option>
+        <option value="papasrusticas">Papas Rusticas</option>
+        <option value="papasencubos">Papas en Cubos</option>
+        <option value="papasbaston">Papas Baston</option>
+        <option value="papasbelga">Papas Belga</option>
+    </optgroup>
+    <optgroup label="Boneless">
+        <option value="bonelessBBQ">Boneless BBQ</option>
+        <option value="bonelessparmesano">Boneless Parmesano</option>
+        <option value="bonelesbufalo">Boneless Bufalo</option>
+        <option value="boneleshabaneromango">Boneless Mango Habanero</option>
+        <option value="bonelesslimonpeper">Boneless Limon Peper</option>
+    </optgroup>
+    <optgroup label="Hot Dogs">
+        <option value="hotdognormal">Hot dog Sencillo</option>
+        <option value="hotdogsalchichaasar">Hot dog Salchicha para Asar</option>
+        <option value="hotdogsalchichaqueso">Hot dog Salchicha y Queso</option>
+    </optgroup>
+    <optgroup label="Tortas">
+        <option value="tortajamonyquesoamarilo">Torta Jamon y Queso Amarillo</option>
+        <option value="tortacarne">Torta de Carne</option>
+        <option value="tortapierna">Torta de Pierna</option>
+        <option value="tortadesebrada">Torta de Desebrada</option>
+    </optgroup>
+    
+    <optgroup label="Tamales">
+        <option value="tamalesdepollo">Tamal de Pollo</option>
+        <option value="tamalesveracruzanos">Tamal Veracruzano</option>
+        <option value="tamaldequesoconrajas">Tamal Queso con rajas</option>
+        <option value="tamaldefrijoles">Tamla de Frijoles</option>
+        <option value="tamaldepuerco">Tamal de Puerco</option>
+        <option value="tamaldepicadillo">Tamal de Picadillo</option>
+    </optgroup>
+    <optgroup label="Entomatadas">
+        <option value="entomatadasdequeso">Entomatadas de Queso</option>
+        <option value="entomatadasdepollo">Entomatadas de Pollo</option>
+    </optgroup>
+   </select>
+
+   <titulo1>Verduras</titulo1><br>
+    Vegetales:
+   <input type="checkbox" id="tomate" checked><label form="tomate">Tomate</label>
+   <input type="checkbox" id="lechuga" checked><label form="lechuga">Lechuga</label>
+   <input type="checkbox" id="aguacate" checked><label form="aguacate">Aguacate</label>
+   <input type="checkbox" id="cebolla" checked><label form="cebolla">Cebolla</label>
+   <input type="checkbox" id="cilantro" checked><label form="cilantro">Cilantro</label>
+   <input type="checkbox" id="zanahoria" checked><label form="zanahoria">Zanahoria</label>
+   <input type="checkbox" id="apio" checked><label form="apio">Apio</label>
+   <input type="checkbox" id="champinones" checked><label form="champinones">Champinones</label>
+    
+   <titulo1>Extras</titulo1><br>
+   Extras:
+   <input type="checkbox" id="quesoamarillo" checked><label form="quesoamarillo">Queso Amarillo</label>
+   <input type="checkbox" id="picodegallo" checked><label form="picodegallo">Pico de gallo</label>
+   <input type="checkbox" id="cebollaasada" checked><label form="cebollaasada">Cebolla Asada</label>
+   <input type="checkbox" id="salsa" checked><label form="salsa">Salsa</label>
+   <input type="checkbox" id="crema" checked><label form="crema">Crema</label>
+   <input type="checkbox" id="guacamole" checked><label form="guacamole">Guacamole</label>
+   <input type="checkbox" id="tocino" checked><label form="tocino">Tocino</label>
+   <input type="checkbox" id="ketchup" checked><label form="ketchup">Ketchup</label>
+   <input type="checkbox" id="aderezoranch" checked><label form="aderezoranch">Aderezo Ranch</label>
+   <input type="checkbox" id="aderezotartara" checked><label form="aderezotartara">Aderezo Tartara</label>
+   <input type="checkbox" id="aderezobelga" checked><label form="aderezobelga">Aderezo Belga</label>
+   <input type="checkbox" id="quesoparmesano" checked><label form="quesoparmesano">Queso Parmesano</label>
+   <input type="checkbox" id="quesomozarella" checked><label form="quesomozarella">Queso Mozarella</label>
+   </p>
+   <input type="submit" value="Enviar">
+   <input type="reset"  value="Borrar">
+ </form>
+<script>
+    const form=document.getElementById("pedido");
+    form.addEventListener("submit",function(event){
+    event.preventDefault();
+    const formData=new FormData(form);
+    const orden={
+          nombre:formData.get("nombre"),
+          apellido:formData.get("apellido"),
+          telefono:formData.get("telefono"),
+          direccion:formData.get("direccion"),
+          colonia:formData.get("colonia"),
+          tomate:document.getElementById("tomate").checked ? "si" : "no",
+          lechuga:document.getElementById("lechuga").checked ? "si" : "no",
+          aguacate:document.getElementById("aguacate").checked ? "si" : "no",
+          cebolla:document.getElementById("cebolla").checked ? "si" : "no",
+          cilantro:document.getElementById("cilantro").checked ? "si" : "no",
+          zanahoria:document.getElementById("zanahoria").checked ? "si" : "no",
+          apio:document.getElementById("apio").checked ? "si" : "no",
+          champinones:document.getElementById("champinones").checked ? "si" : "no",
+          quesoamarillo:document.getElementById("quesoamarillo").checked ? "si" : "no",
+          picodegallo:document.getElementById("picodegallo").checked ? "si" : "no",
+          cebollaasada:document.getElementById("cebollaasada").checked ? "si" : "no",
+          salsa:document.getElementById("salsa").checked ? "si" : "no",
+          crema:document.getElementById("crema").checked ? "si" : "no",
+          guacamole:document.getElementById("guacamole").checked ? "si" : "no",
+          tocino:document.getElementById("tocino").checked ? "si" : "no",
+          ketchup:document.getElementById("ketchup").checked ? "si" : "no",
+          aderezoranch:document.getElementById("aderezoranch").checked ? "si" : "no",
+          aderezotartara:document.getElementById("aderezotartara").checked ? "si" : "no",
+          aderezobelga:document.getElementById("aderezobelga").checked ? "si" : "no",
+          quesoparmesano:document.getElementById("quesoparmesano").checked ? "si" : "no",
+          quesomozarella:document.getElementById("quesomozarella").checked ? "si" : "no",
+        };
+        localStorage.setItem("orden", JSON.stringify(orden));
+        window.location.href="pedidorealizado.html";
+    });
+</script>
+</body>
+</html>
